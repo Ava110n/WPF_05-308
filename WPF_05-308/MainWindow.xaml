@@ -1,0 +1,46 @@
+﻿<Window x:Class="WPF_05_308.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_05_308"
+        mc:Ignorable="d"
+        Title="Doka 2" Height="800" Width="600">
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Name = "Calc" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize ="42" Margin="10,10,10,10"/>
+
+        <Button Name="B1" Content="1" Click="onClick" Grid.Row="3" Grid.Column="0" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B2" Content="2" Click="onClick" Grid.Row="3" Grid.Column="1" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B3" Content="3" Click="onClick" Grid.Row="3" Grid.Column="2" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B4" Content="4" Click="onClick" Grid.Row="2" Grid.Column="0" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B5" Content="5" Click="onClick" Grid.Row="2" Grid.Column="1" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B6" Content="6" Click="onClick" Grid.Row="2" Grid.Column="2" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B7" Content="7" Click="onClick" Grid.Row="1" Grid.Column="0" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B8" Content="8" Click="onClick" Grid.Row="1" Grid.Column="1" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B9" Content="9" Click="onClick" Grid.Row="1" Grid.Column="2" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B0" Content="0" Click="onClick" Grid.Row="4" Grid.Column="1" FontSize="20" Margin="10,10,10,10"/>
+        
+        <Button Name="B_plus_minus" Content="+/-" Grid.Row="4" Grid.Column="0" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B_dot" Content="." Grid.Row="4" Grid.Column="2" FontSize="20" Margin="10,10,10,10"/>
+        
+        
+        <Button Name="B_plus" Content="+" Grid.Row="1" Grid.Column="3" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B_minus" Content="-" Grid.Row="2" Grid.Column="3" FontSize="20" Margin="10,10,10,10"/>
+        <Button Name="B_equals" Content="=" Grid.Row ="3" Grid.RowSpan="4" Grid.Column="3" FontSize="20" Margin="10,10,10,10" Background="#0000DD" Foreground="#FFFFFF"/>
+    </Grid>
+</Window>
